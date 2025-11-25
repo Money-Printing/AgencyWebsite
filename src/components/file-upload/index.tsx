@@ -1,4 +1,4 @@
-import React, { useState, type DragEvent, type ChangeEvent } from "react";
+import { useState, type DragEvent, type ChangeEvent } from "react";
 
 export default function FileUpload() {
   const [file, setFile] = useState<File | null>(null);
