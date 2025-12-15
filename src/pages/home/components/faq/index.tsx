@@ -85,7 +85,7 @@ export default function HomeFaq({
 
 					<h4 className="text-3xl font-semibold text-muted-foreground z-10 relative">
 						Still Not Sure? <br />
-						<span className="text-foreground">Book A Call.</span>
+						<span className="animated-gradient-text">Book A Call.</span>
 					</h4>
 
 					<p className="text-sm text-muted-foreground -mt-1 z-10 relative">
