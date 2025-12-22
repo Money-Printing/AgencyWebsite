@@ -1,6 +1,16 @@
 import { motion } from 'motion/react'
 import { PhoneCall } from 'lucide-react';
 import ButtonLink from '../ui/button-link.tsx';
+import Button from '../ui/button';
+
+// Declare Calendly type
+declare global {
+	interface Window {
+		Calendly: {
+			initPopupWidget: (options: { url: string }) => void;
+		};
+	}
+}
 
 
 export const brands = [
@@ -17,6 +27,14 @@ export const brands = [
 ]
 
 const Hero = () => {
+	const handleBookCall = () => {
+		if (window.Calendly) {
+			window.Calendly.initPopupWidget({ 
+				url: 'https://calendly.com/priyanshud/contact-us' 
+			});
+		}
+	};
+
 	return (
 		<section id='home-hero' className="relative min-h-screen flex justify-center overflow-hidden px-4">
 			<div className="container mx-auto">
@@ -56,13 +74,13 @@ const Hero = () => {
 						transition={{ duration: 0.3, delay: 0.6 }}
 						className="flex flex-col sm:flex-row gap-4 justify-center"
 					>
-						<ButtonLink
-							to='/contact-us'
+						<Button
+							onClick={handleBookCall}
 							className='w-full sm:w-fit'
 						>
 							Book Call
 							<PhoneCall size={20} className="ml-2 w-5 h-5" />
-						</ButtonLink>
+						</Button>
 						<ButtonLink
 							to='/services'
 							className='w-full sm:w-fit'
