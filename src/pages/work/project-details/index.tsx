@@ -153,7 +153,7 @@ const projectsData: Record<string, ProjectDetail> = {
 			{ metric: "User Engagement", value: "45 min/session" },
 			{ metric: "Skill Improvement", value: "60%" }
 		],
-		videoUrl: "",
+		videoUrl: "/videos/airtrader-trading-simulator/airtraderdemo.mp4",
 		galleryImages: [
 			"/images/airtrader-trading-simulator/airtraderimage1.png",
 			"/images/airtrader-trading-simulator/airtraderimage2.png",
@@ -338,8 +338,14 @@ const projectsData: Record<string, ProjectDetail> = {
 			{ metric: "Course Completion", value: "78%" },
 			{ metric: "User Retention", value: "65%" }
 		],
-		videoUrl: "",
-		galleryImages: [],
+		videoUrl: "/videos/champspace/champspace.mp4",
+		galleryImages: [
+			"/images/champspace/champspaceimage1.PNG",
+			"/images/champspace/Champspaceimage2.PNG",
+			"/images/champspace/champspaceimage3.PNG",
+			"/images/champspace/champspaceimage4.PNG",
+			"/images/champspace/champspaceimage5.PNG"
+		],
 		galleryGifs: []
 	},
 	"adnow": {
