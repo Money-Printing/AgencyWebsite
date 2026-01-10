@@ -354,7 +354,7 @@ const projectsData: Record<string, ProjectDetail> = {
 		description: "A comprehensive ad agency solution providing one-centric management for all ads across Meta, Google, Amazon, and more",
 		category: "MarTech/AdTech",
 		client: "Digital Marketing Agency",
-		duration: "9 months",
+		duration: "1 month",
 		technologies: ["React", "Node.js", "TypeScript", "Python", "PostgreSQL", "Redis", "AWS", "REST APIs"],
 		overview: "Developed a unified advertising management platform that consolidates campaign management across multiple advertising networks including Meta, Google, and Amazon. The platform provides centralized analytics, budget management, and campaign optimization across all channels from a single dashboard.",
 		challenges: [
@@ -384,8 +384,13 @@ const projectsData: Record<string, ProjectDetail> = {
 			{ metric: "Spend Managed", value: "$50M+" },
 			{ metric: "ROAS Improvement", value: "40%" }
 		],
-		videoUrl: "",
-		galleryImages: [],
+		videoUrl: "/videos/adnow/adnowdemo.mp4",
+		galleryImages: [
+			"/images/adnow/adnowimage1.PNG",
+			"/images/adnow/adnowimage2.PNG",
+			"/images/adnow/adnowimage3.PNG",
+			"/images/adnow/adnowimage4.PNG"
+		],
 		galleryGifs: []
 	}
 };
